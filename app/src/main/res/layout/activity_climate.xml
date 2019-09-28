@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClimateActivity">
+    tools:context=".ClimateActivity"
+    android:background="#fff">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/color_blue"/>
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="26sp"
+        android:padding="14dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/text"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:text="Climate :"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="140dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text"
+        android:id="@+id/climate"
+        android:textColor="#000"
+        android:layout_below="@+id/toolbar"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/temp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:text="Temperature :"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="250dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text"
+        android:id="@+id/temperature"
+        android:layout_below="@+id/toolbar"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="60dp"/>
+
+
+
+
+</RelativeLayout>
